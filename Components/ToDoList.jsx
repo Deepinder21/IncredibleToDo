@@ -17,17 +17,22 @@ function ToDoList(props) {
         <ScrollView>
         <Pressable>
           <View style={[styles.task, styles.completed]}>
-            <Text style={styles.taskText}>Do laundry</Text>
+            <Text style={styles.taskText}>Buy grocery</Text>
           </View>
         </Pressable>
         <Pressable>
           <View style={[styles.task]}>
-            <Text style={styles.taskText}>Go to gym</Text>
+            <Text style={styles.taskText}>Do Laundry</Text>
           </View>
         </Pressable>
         <Pressable>
           <View style={[styles.task, styles.completed]}>
-            <Text style={styles.taskText}>Walk dog</Text>
+            <Text style={styles.taskText}>Wash car</Text>
+          </View>
+        </Pressable>
+        <Pressable>
+          <View style={[styles.task, styles.completed]}>
+            <Text style={styles.taskText}>Empty Bins</Text>
           </View>
         </Pressable>
       </ScrollView>
@@ -37,15 +42,15 @@ function ToDoList(props) {
 
 const styles = StyleSheet.create({
     task: {
-      padding: 10,
-      borderBottomWidth: 1,
-      borderColor: '#ccc',
+      padding: 15,
+      borderBottomWidth: 5,
+      borderColor: 'black',
     },
     completed: {
-      backgroundColor: '#e0e0e0',
+      backgroundColor: '#grey',
     },
     taskText: {
-      fontSize: 16,
+      fontSize: 20,
     },
     });
 

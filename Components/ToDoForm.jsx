@@ -16,7 +16,7 @@ function ToDoForm() {
       <View style={styles.form}>
         <TextInput
           style={styles.input}
-          placeholder="Add a new task..."
+          placeholder="Enter your task here..."
         />
         <Button title="Add" />
       </View>
@@ -29,12 +29,12 @@ form: {
     justifyContent: 'space-between',
     alignItems: 'center',
     marginHorizontal: 20,
-    marginTop: 20,
+    marginTop: 10,
   },
   input: {
     flex: 1,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#bla',
     paddingHorizontal: 10,
     paddingVertical: 5,
     marginRight: 10,
