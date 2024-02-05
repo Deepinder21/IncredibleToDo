@@ -34,7 +34,7 @@ form: {
   input: {
     flex: 1,
     borderWidth: 1,
-    borderColor: '#bla',
+    borderColor: '#black',
     paddingHorizontal: 10,
     paddingVertical: 5,
     marginRight: 10,
