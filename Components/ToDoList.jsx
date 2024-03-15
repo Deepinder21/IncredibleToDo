@@ -11,30 +11,20 @@ import {
     Button
   } from 'react-native';
 
-function ToDoList(props) {
+function ToDoList({ tasks }) {
   return (
     <>
         <ScrollView>
-        <Pressable>
-          <View style={[styles.task, styles.completed]}>
-            <Text style={styles.taskText}>Buy grocery</Text>
-          </View>
-        </Pressable>
-        <Pressable>
-          <View style={[styles.task]}>
-            <Text style={styles.taskText}>Do Laundry</Text>
-          </View>
-        </Pressable>
-        <Pressable>
-          <View style={[styles.task, styles.completed]}>
-            <Text style={styles.taskText}>Wash car</Text>
-          </View>
-        </Pressable>
-        <Pressable>
-          <View style={[styles.task, styles.completed]}>
-            <Text style={styles.taskText}>Empty Bins</Text>
-          </View>
-        </Pressable>
+            <view>
+              {tasks.map((task, index) => (
+                <Pressable
+                  key={index}>
+                  <view style={[styles.task, styles.completed]}>
+                  <Text style={styles.taskText}>{task}</Text>
+                  </view>
+                </Pressable>
+              ))}
+            </view>
       </ScrollView>
     </>
   );
@@ -44,7 +34,7 @@ const styles = StyleSheet.create({
     task: {
       padding: 15,
       borderBottomWidth: 5,
-      borderColor: 'black',
+      borderColor: '#black',
     },
     completed: {
       backgroundColor: '#grey',
