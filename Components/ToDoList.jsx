@@ -15,16 +15,16 @@ function ToDoList({ tasks }) {
   return (
     <>
         <ScrollView>
-            <view>
+            <View>
               {tasks.map((task, index) => (
                 <Pressable
                   key={index}>
-                  <view style={[styles.task, styles.completed]}>
+                  <View style={[styles.task, styles.completed]}>
                   <Text style={styles.taskText}>{task}</Text>
-                  </view>
+                  </View>
                 </Pressable>
               ))}
-            </view>
+            </View>
       </ScrollView>
     </>
   );
